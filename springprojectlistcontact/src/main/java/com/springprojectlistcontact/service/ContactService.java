@@ -13,7 +13,6 @@ public class ContactService {
     @Autowired
     private ContactRepository cRepository;
 
-    @SuppressWarnings("null")
     public Contact saveContact(Contact contact){
         cRepository.save(contact);
         return contact;
